@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Napoli - Authentic Italian Pizza</title>
+    <meta name="description" content="Découvrez la vraie pizza napolitaine chez Bella Napoli. Ingrédients frais, pâte traditionnelle et saveurs inoubliables.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Bandeau de démo -->
+    <div class="demo-banner">
+        Site de démonstration
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Bella <span class="accent">Napoli</span></a>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Accueil</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#contact" class="btn-primary">Réserver</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">Le Goût de l'Italie <br>dans chaque bouchée</h1>
+            <p class="fade-in delay-200">Ingrédients frais, four à bois traditionnel, passion authentique.</p>
+            <div class="hero-buttons fade-in delay-400">
+                <a href="#menu" class="btn-primary">Voir le Menu</a>
+                <a href="#contact" class="btn-outline">Nous Trouver</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features section">
+        <div class="container grid-3">
+            <div class="feature-card scroll-reveal">
+                <div class="icon-box">
+                    <i class="fas fa-pizza-slice"></i>
+                </div>
+                <h3>Pâte Fraîche</h3>
+                <p>Préparée chaque matin avec de la farine italienne authentique et une fermentation lente de 48h.</p>
+            </div>
+            <div class="feature-card scroll-reveal delay-200">
+                <div class="icon-box">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Ingrédients Bio</h3>
+                <p>Tomates San Marzano, Mozzarella di Bufala et basilic frais de nos producteurs locaux.</p>
+            </div>
+            <div class="feature-card scroll-reveal delay-400">
+                <div class="icon-box">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <h3>Cuisson au Feu de Bois</h3>
+                <p>Une cuisson parfaite à 400°C pour ce goût fumé et croustillant inimitable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section bg-dark">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="subtitle">Nos Spécialités</span>
+                <h2>Le Menu Favori</h2>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Pizza Item 1 -->
+                <article class="menu-item scroll-reveal">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pizza Margherita">
+                        <span class="price">12€</span>
+                    </div>
+                    <div class="menu-content">
+                        <h3>Margherita Classica</h3>
+                        <p>Sauce tomate San Marzano, Mozzarella fior di latte, basilic frais, huile d'olive vierge.</p>
+                        <button class="btn-text">Commander <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- Pizza Item 2 -->
+                <article class="menu-item scroll-reveal delay-100">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pizza Pepperoni">
+                        <span class="price">14€</span>
+                    </div>
+                    <div class="menu-content">
+                        <h3>Diavola Piccante</h3>
+                        <p>Sauce tomate, Mozzarella, Salami piquant (Spianata), piments frais, olives noires.</p>
+                        <button class="btn-text">Commander <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- Pizza Item 3 -->
+                <article class="menu-item scroll-reveal delay-200">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pizza Veggie">
+                        <span class="price">13€</span>
+                    </div>
+                    <div class="menu-content">
+                        <h3>Ortolana Grigliata</h3>
+                        <p>Base blanche, Mozzarella, Aubergines, Courgettes, Poivrons grillés, Parmigiano.</p>
+                        <button class="btn-text">Commander <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+                
+                 <!-- Pizza Item 4 -->
+                 <article class="menu-item scroll-reveal delay-300">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pizza Burrata">
+                        <span class="price">16€</span>
+                    </div>
+                    <div class="menu-content">
+                        <h3>Burrata & Pesto</h3>
+                        <p>Sauce tomate cerise, Burrata crémeuse entière (ajoutée après cuisson), Pesto maison, pignons.</p>
+                        <button class="btn-text">Commander <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn-outline">Voir toute la carte</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="banner skew-section">
+        <div class="banner-content text-center">
+            <h2>Commandez en ligne et obtenez <span>10% de réduction</span></h2>
+            <p>Utilisez le code PROMO: BELLA10 sur votre première commande</p>
+            <a href="#" class="btn-white">Commander Maintenant</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container grid-2 align-center">
+            <div class="about-img-group scroll-reveal">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chef préparant une pizza" class="img-main">
+                <img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ingrédients frais" class="img-sub">
+                <div class="exp-badge">
+                    <span class="years">20+</span>
+                    <span class="text">Années d'expérience</span>
+                </div>
+            </div>
+            <div class="about-content scroll-reveal delay-200">
+                <span class="subtitle">Notre Histoire</span>
+                <h2>Une tradition familiale <br>depuis 1998</h2>
+                <p>Tout a commencé dans une petite cuisine à Naples. Notre grand-mère, Nonna Maria, nous a appris que le secret d'une bonne pizza n'est pas seulement dans la recette, mais dans l'amour qu'on y met.</p>
+                <p>Aujourd'hui, nous perpétuons cet héritage en utilisant les mêmes méthodes artisanales, le même levain mère transmis de génération en génération, et cette même passion pour l'excellence.</p>
+                
+                <ul class="about-list">
+                    <li><i class="fas fa-check"></i> Produits 100% frais et de saison</li>
+                    <li><i class="fas fa-check"></i> Farine importée d'Italie (Type 00)</li>
+                    <li><i class="fas fa-check"></i> Ambiance chaleureuse et conviviale</li>
+                </ul>
+                
+                <a href="#gallery" class="btn-primary">Notre Galerie</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="subtitle">Ambiance & Saveurs</span>
+                <h2>Galerie Photos</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item scroll-reveal">
+                    <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Salle du restaurant chaleureuse">
+                </div>
+                <div class="gallery-item scroll-reveal delay-100">
+                    <img src="https://images.unsplash.com/photo-1541454227000-6319a3e2c9ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Pizza sortant du four à bois">
+                </div>
+                <div class="gallery-item scroll-reveal delay-200">
+                    <img src="https://images.unsplash.com/photo-1544982503-9f984c14501f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Table dressée pour le service">
+                </div>
+                <div class="gallery-item scroll-reveal delay-300">
+                    <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Détail d'une pizza gourmande">
+                </div>
+                <div class="gallery-item scroll-reveal delay-400">
+                    <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Équipe de cuisine souriante">
+                </div>
+                <div class="gallery-item scroll-reveal delay-500">
+                    <img src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Ingrédients italiens de qualité">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Réservation Section -->
+    <section id="contact" class="contact section bg-dark">
+        <div class="container contact-grid">
+            <div class="contact-info scroll-reveal">
+                <span class="subtitle">Réserver une table</span>
+                <h2>Venez goûter l'Italie</h2>
+                <p>Remplissez le formulaire ci-contre, nous vous confirmerons votre réservation par téléphone ou par email dans les plus brefs délais.</p>
+                <ul class="contact-list">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Rue de la Pizza, 75000 Paris</li>
+                    <li><i class="fas fa-phone"></i> 01 23 45 67 89</li>
+                    <li><i class="fas fa-envelope"></i> contact@bellanapoli.fr</li>
+                </ul>
+            </div>
+
+            <div class="contact-form-wrapper scroll-reveal delay-200">
+                <form id="reservation-form" class="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required placeholder="Votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="vous@example.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Votre numéro">
+                        </div>
+                        <div class="form-group">
+                            <label for="people">Nombre de personnes *</label>
+                            <input type="number" id="people" name="people" min="1" max="20" required value="2">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Heure *</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message (optionnel)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Précisez vos envies ou allergies..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Envoyer la demande</button>
+                    <p id="reservation-message" class="form-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo">Bella <span class="accent">Napoli</span></a>
+                    <p>La meilleure pizza de la ville, servie avec passion et sourire. Venez goûter la différence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Horaires</h3>
+                    <ul>
+                        <li>Lundi - Jeudi: 11h30 - 22h00</li>
+                        <li>Vendredi - Samedi: 11h30 - 23h00</li>
+                        <li>Dimanche: 12h00 - 22h00</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Rue de la Pizza, 75000 Paris</li>
+                        <li><i class="fas fa-phone"></i> 01 23 45 67 89</li>
+                        <li><i class="fas fa-envelope"></i> contact@bellanapoli.fr</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Inscrivez-vous pour recevoir nos offres spéciales.</p>
+                    <form id="newsletter-form" class="newsletter-form" novalidate>
+                        <input type="email" id="newsletter-email" name="email" placeholder="Votre email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <p id="newsletter-message" class="form-message" aria-live="polite"></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bella Napoli. Tous droits réservés. Design par Antigravity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
